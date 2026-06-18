@@ -11,6 +11,17 @@ Question: Demonstrate the use of the fallthrough keyword in a switch statement.
 */
 
 func main() {
-	// Write your solution here
-	fmt.Println("Not implemented")
+	const age = 9
+
+	switch{
+	case age > 18:
+		fmt.Println("You are eligible")
+		fallthrough
+	case age <= 18:
+		fmt.Println("You are not eligible")
+		fallthrough
+	case age < 0:
+		fmt.Println("You are just a seed")
+	}
+
 }

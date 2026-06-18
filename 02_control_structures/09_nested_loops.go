@@ -11,6 +11,9 @@ Question: Write nested loops to print a multiplication table.
 */
 
 func main() {
-	// Write your solution here
-	fmt.Println("Not implemented")
+	for i:=1;i<=10;i++{
+		for j:=1;j<=10;j++{
+			fmt.Println(i,"X",j,"=",i*j)
+		}
+	}
 }

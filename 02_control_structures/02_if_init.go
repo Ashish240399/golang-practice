@@ -11,6 +11,9 @@ Question: Use an if statement with a short initialization statement.
 */
 
 func main() {
-	// Write your solution here
-	fmt.Println("Not implemented")
+	if num:=15; num>18{
+		fmt.Println("This is Adult")
+	}else{
+		fmt.Println("This is not Adult")
+	}
 }

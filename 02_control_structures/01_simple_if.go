@@ -11,6 +11,11 @@ Question: Write a basic if-else statement to check if a number is even or odd.
 */
 
 func main() {
-	// Write your solution here
-	fmt.Println("Not implemented")
+	num:=11
+
+	if (num%2 == 1){
+		fmt.Println("This is ODD")
+	}else{
+		fmt.Println("This is EVEN")
+	}
 }

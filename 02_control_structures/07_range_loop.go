@@ -11,6 +11,9 @@ Question: Use a for-range loop to iterate over a string and print index and char
 */
 
 func main() {
-	// Write your solution here
-	fmt.Println("Not implemented")
+	words:= "Golang tutorial"
+
+	for _, ch:=range words{
+		fmt.Printf("%c\n",ch)
+	}
 }

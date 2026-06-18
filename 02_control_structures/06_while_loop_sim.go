@@ -11,6 +11,9 @@ Question: Use a for loop to simulate a while loop.
 */
 
 func main() {
-	// Write your solution here
-	fmt.Println("Not implemented")
+	i:=1
+	for i <= 10 {
+		fmt.Println(i)
+		i++
+	}
 }

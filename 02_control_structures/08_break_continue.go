@@ -11,6 +11,16 @@ Question: Use break and continue to control a loop's execution flow.
 */
 
 func main() {
-	// Write your solution here
-	fmt.Println("Not implemented")
+	words:= "Hye I am Ashish"
+
+	for _,ch:=range words {
+		if ch == 'I' || ch == ' ' {
+			continue
+		}
+		if ch == 'h'{
+			break
+		}else{
+			fmt.Printf("%c",ch)
+		}
+	}
 }
