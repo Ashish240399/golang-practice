@@ -12,5 +12,8 @@ Question: Use fmt.Printf to format numbers, strings, and booleans in different w
 
 func main() {
 	// Write your solution here
-	fmt.Println("Not implemented")
+	a := 10
+	b := "Hello"
+	c := true
+	fmt.Printf("Int: %d, Str: %s, Bool: %t", a, b, c)
 }

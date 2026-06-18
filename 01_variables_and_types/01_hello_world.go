@@ -12,5 +12,5 @@ Question: Write a program that prints 'Hello, World!' to the console.
 
 func main() {
 	// Write your solution here
-	fmt.Println("Not implemented")
+	fmt.Println("Hello, World!")
 }

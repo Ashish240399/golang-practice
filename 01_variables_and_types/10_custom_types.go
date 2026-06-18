@@ -10,7 +10,13 @@ Difficulty: Medium
 Question: Declare a custom type based on an int and write a function using it.
 */
 
+type Age int
+
 func main() {
-	// Write your solution here
-	fmt.Println("Not implemented")
+	
+	printAge := func(age Age){
+		fmt.Println(age)
+	}
+
+	printAge(23)
 }

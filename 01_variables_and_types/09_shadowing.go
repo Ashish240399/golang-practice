@@ -11,6 +11,12 @@ Question: Demonstrate variable shadowing in an inner scope.
 */
 
 func main() {
-	// Write your solution here
-	fmt.Println("Not implemented")
+	name := "Ashish"
+
+	if true {
+		name := "XYZ"
+		fmt.Println(name)
+	}
+
+	fmt.Println(name)
 }

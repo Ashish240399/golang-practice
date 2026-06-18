@@ -12,5 +12,9 @@ Question: Use multiple assignment to swap the values of two variables.
 
 func main() {
 	// Write your solution here
-	fmt.Println("Not implemented")
+	a := 10
+	b := 30
+
+	a, b = b, a
+	fmt.Println(a, b)
 }
