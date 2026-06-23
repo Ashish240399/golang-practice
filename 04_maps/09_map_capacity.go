@@ -11,6 +11,9 @@ Question: Initialize a map with a specific capacity hint using make.
 */
 
 func main() {
-	// Write your solution here
-	fmt.Println("Not implemented")
+	m := make(map[string]int, 100)
+
+	m["Ashish"] = 23
+
+	fmt.Println(m)
 }

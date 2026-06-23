@@ -11,6 +11,17 @@ Question: Create a map where the values are custom structs.
 */
 
 func main() {
-	// Write your solution here
-	fmt.Println("Not implemented")
+	type customStruct struct {
+		name string
+		age  int
+	}
+
+	data := map[string]customStruct{
+		"Candidate 1": {
+			name: "Ashish",
+			age:  23,
+		},
+	}
+
+	fmt.Println(data)
 }

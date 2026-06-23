@@ -11,6 +11,12 @@ Question: Iterate over a map using for-range and print all keys and values.
 */
 
 func main() {
-	// Write your solution here
-	fmt.Println("Not implemented")
+	profile := map[string]int{
+		"Ashish": 23,
+		"Rupali": 21,
+	}
+
+	for key, value := range profile {
+		fmt.Printf("Key=%s, Value=%d\n", key, value)
+	}
 }

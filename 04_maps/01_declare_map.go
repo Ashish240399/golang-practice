@@ -11,6 +11,9 @@ Question: Declare and initialize a map with string keys and integer values.
 */
 
 func main() {
-	// Write your solution here
-	fmt.Println("Not implemented")
+	profile := map[string]int{}
+
+	profile["Ashish"] = 23
+
+	fmt.Println(profile)
 }

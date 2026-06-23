@@ -11,6 +11,13 @@ Question: Create and interact with a nested map (map of maps).
 */
 
 func main() {
-	// Write your solution here
-	fmt.Println("Not implemented")
+	parentMap := make(map[string]map[string]int)
+
+	parentMap["Ashish"] = map[string]int{
+		"Age": 29,
+	}
+
+	parentMap["Ashish"]["Age"] = 34
+
+	fmt.Println(parentMap)
 }
