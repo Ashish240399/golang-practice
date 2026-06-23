@@ -11,6 +11,9 @@ Question: Create and initialize a 2D slice (slice of slices) and print its conte
 */
 
 func main() {
-	// Write your solution here
-	fmt.Println("Not implemented")
+	var matrix [][]int
+
+	matrix = append(matrix, []int{1, 2})
+
+	fmt.Println(matrix)
 }

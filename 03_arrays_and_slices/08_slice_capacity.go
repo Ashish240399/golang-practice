@@ -11,6 +11,10 @@ Question: Write a program demonstrating how slice capacity grows automatically w
 */
 
 func main() {
-	// Write your solution here
-	fmt.Println("Not implemented")
+	s := []int{}
+
+	for i := range 11 {
+		s = append(s, i)
+		fmt.Printf("len=%d,cap=%d\n", len(s), cap(s))
+	}
 }

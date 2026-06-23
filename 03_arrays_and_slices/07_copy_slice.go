@@ -11,6 +11,12 @@ Question: Use the copy built-in function to copy elements from one slice to anot
 */
 
 func main() {
-	// Write your solution here
-	fmt.Println("Not implemented")
+	s := []int{43, 4456, 56, 545, 454, 5}
+
+	c := make([]int, len(s))
+
+	n := copy(c, s)
+
+	fmt.Println(n)
+	fmt.Println(c)
 }

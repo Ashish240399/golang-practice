@@ -11,6 +11,8 @@ Question: Use the make built-in function to create a slice with a specific lengt
 */
 
 func main() {
-	// Write your solution here
-	fmt.Println("Not implemented")
+	a := make([]int, 3, 5)
+
+	a = append(a, 3)
+	fmt.Println(a)
 }

@@ -11,6 +11,9 @@ Question: Append multiple elements to a slice and print the new slice and its ca
 */
 
 func main() {
-	// Write your solution here
-	fmt.Println("Not implemented")
+	a := make([]int, 0, 2)
+
+	a = append(a, 2, 3, 4, 5, 6)
+
+	fmt.Println(a, len(a), cap(a))
 }

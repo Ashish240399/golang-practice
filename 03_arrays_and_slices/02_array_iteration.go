@@ -11,6 +11,13 @@ Question: Iterate over an array using a for loop and print the sum of its elemen
 */
 
 func main() {
-	// Write your solution here
-	fmt.Println("Not implemented")
+	arr := [5]int{1, 2, 3, 4, 5}
+
+	sum := 0
+
+	for _, el := range arr {
+		sum += el
+	}
+
+	fmt.Println((sum))
 }
