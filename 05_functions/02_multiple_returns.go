@@ -11,6 +11,14 @@ Question: Write a function that returns both the quotient and remainder of divis
 */
 
 func main() {
-	// Write your solution here
-	fmt.Println("Not implemented")
+	q, r := division(10, 3)
+
+	fmt.Println(q, r)
+}
+
+func division(a int, b int) (int, int) {
+	quotient := a / b
+	remainder := a % b
+
+	return quotient, remainder
 }

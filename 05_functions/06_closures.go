@@ -11,6 +11,18 @@ Question: Write a function that returns a closure which keeps track of a counter
 */
 
 func main() {
-	// Write your solution here
-	fmt.Println("Not implemented")
+	inc := counter()
+
+	fmt.Println(inc())
+	fmt.Println(inc())
+	fmt.Println(inc())
+}
+
+func counter() func() int {
+	count := 0
+
+	return func() int {
+		count++
+		return count
+	}
 }

@@ -11,6 +11,13 @@ Question: Define and invoke an anonymous function inside main.
 */
 
 func main() {
-	// Write your solution here
-	fmt.Println("Not implemented")
+	randomFunc := func() {
+		fmt.Println("Hello random function")
+	}
+
+	randomFunc()
+
+	func() {
+		fmt.Println("I am IIFE")
+	}()
 }

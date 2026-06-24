@@ -11,6 +11,14 @@ Question: Write a recursive function to calculate the factorial of a number.
 */
 
 func main() {
-	// Write your solution here
-	fmt.Println("Not implemented")
+	fact := factorial(5)
+
+	fmt.Println(fact)
+}
+
+func factorial(n int) int {
+	if n < 2 {
+		return 1
+	}
+	return n * factorial(n-1)
 }

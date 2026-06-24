@@ -11,6 +11,17 @@ Question: Write a variadic function that calculates the sum of an arbitrary numb
 */
 
 func main() {
-	// Write your solution here
-	fmt.Println("Not implemented")
+	ans := sum(2, 4, 5, 9)
+
+	fmt.Println(ans)
+}
+
+func sum(num ...int) int {
+	total := 0
+
+	for _, n := range num {
+		total += n
+	}
+
+	return total
 }

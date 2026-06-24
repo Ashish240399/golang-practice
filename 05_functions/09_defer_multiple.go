@@ -11,6 +11,8 @@ Question: Demonstrate the LIFO (Last-In, First-Out) execution order of multiple 
 */
 
 func main() {
-	// Write your solution here
-	fmt.Println("Not implemented")
+	defer fmt.Println("1")
+	defer fmt.Println("2")
+	defer fmt.Println("3")
+	defer fmt.Println("4")
 }
