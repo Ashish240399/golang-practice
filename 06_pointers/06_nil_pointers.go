@@ -11,6 +11,13 @@ Question: Check if a pointer is nil before dereferencing it to avoid panics.
 */
 
 func main() {
-	// Write your solution here
-	fmt.Println("Not implemented")
+	a := 10
+
+	b := &a
+
+	if b != nil {
+		fmt.Println(*b)
+	} else {
+		fmt.Println("Pointer is nil")
+	}
 }

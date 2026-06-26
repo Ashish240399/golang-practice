@@ -11,6 +11,11 @@ Question: Declare a pointer, assign it a variable's address, and print the deref
 */
 
 func main() {
-	// Write your solution here
-	fmt.Println("Not implemented")
+	a := 10
+	b := &a
+
+	fmt.Println(b)
+
+	fmt.Println(*b)
+
 }

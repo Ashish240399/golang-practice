@@ -11,6 +11,11 @@ Question: Declare a pointer to a pointer and trace the values back to the origin
 */
 
 func main() {
-	// Write your solution here
-	fmt.Println("Not implemented")
+	val := 12
+
+	ptrVal := &val
+
+	secondPtrVal := &ptrVal
+
+	fmt.Println(val, ptrVal, secondPtrVal, *ptrVal, **secondPtrVal)
 }

@@ -11,6 +11,13 @@ Question: Write a function that returns a pointer to a local variable (escape an
 */
 
 func main() {
-	// Write your solution here
-	fmt.Println("Not implemented")
+	ans := a()
+
+	fmt.Println(ans)
+}
+
+func a() *int {
+	val := 20
+
+	return &val
 }

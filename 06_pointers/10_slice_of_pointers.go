@@ -11,6 +11,14 @@ Question: Create a slice containing pointers to integers and iterate over it.
 */
 
 func main() {
-	// Write your solution here
-	fmt.Println("Not implemented")
+	a := 12
+	b := 34
+
+	sliceData := []*int{
+		&a, &b,
+	}
+
+	for _, data := range sliceData {
+		fmt.Println(data, *data)
+	}
 }
