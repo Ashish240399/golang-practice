@@ -11,6 +11,17 @@ Question: Use a type switch to handle different concrete types stored in an inte
 */
 
 func main() {
-	// Write your solution here
-	fmt.Println("Not implemented")
+	var data any = 23
+
+	switch v := data.(type) {
+	case string:
+		fmt.Println("Data is string", v)
+
+	case int:
+		fmt.Println("Data is int", v)
+
+	default:
+		fmt.Println("Data is unknown", v)
+
+	}
 }
