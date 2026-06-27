@@ -11,6 +11,13 @@ Question: Create and use an anonymous struct in a single line.
 */
 
 func main() {
-	// Write your solution here
-	fmt.Println("Not implemented")
+	randomStruct := struct {
+		name string
+		age  int
+	}{
+		name: "Ashish",
+		age:  33,
+	}
+
+	fmt.Print(randomStruct)
 }

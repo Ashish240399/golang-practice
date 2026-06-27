@@ -9,8 +9,18 @@ Difficulty: Easy
 
 Question: Define a struct representing a User with Name, Age, and Email.
 */
+type User struct {
+	Name  string
+	Age   int
+	Email string
+}
 
 func main() {
-	// Write your solution here
-	fmt.Println("Not implemented")
+	user := User{
+		Name:  "Ashish",
+		Age:   23,
+		Email: "ewihf@gmail.com",
+	}
+
+	fmt.Println(user)
 }

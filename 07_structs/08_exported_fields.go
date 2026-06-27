@@ -9,8 +9,21 @@ Difficulty: Medium
 
 Question: Demonstrate the difference between exported (capitalized) and unexported fields.
 */
+type Person struct {
+	Name string // Public
+	age  int    // Private
+}
 
 func main() {
-	// Write your solution here
-	fmt.Println("Not implemented")
+	data := Person{
+		Name: "Ashish",
+		age:  56,
+	}
+
+	fmt.Println(data.GetAge())
+
+}
+
+func (p Person) GetAge() int {
+	return p.age
 }
