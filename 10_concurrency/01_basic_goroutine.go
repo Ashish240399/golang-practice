@@ -2,7 +2,10 @@
 
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 /*
 Difficulty: Easy
@@ -10,7 +13,14 @@ Difficulty: Easy
 Question: Start a basic goroutine that prints a message concurrently.
 */
 
+func execute() {
+	fmt.Println("Hello execution")
+}
+
 func main() {
-	// Write your solution here
-	fmt.Println("Not implemented")
+	go execute()
+
+	fmt.Println("Hello 2")
+
+	time.Sleep(time.Second)
 }

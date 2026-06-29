@@ -2,7 +2,10 @@
 
 package main
 
-import "fmt"
+import (
+	"errors"
+	"fmt"
+)
 
 /*
 Difficulty: Easy
@@ -10,7 +13,14 @@ Difficulty: Easy
 Question: Write a function that returns an error using errors.New.
 */
 
+func getError() error {
+	return errors.New("This is an error")
+}
+
 func main() {
-	// Write your solution here
-	fmt.Println("Not implemented")
+	err := getError()
+
+	if err != nil {
+		fmt.Println(err)
+	}
 }

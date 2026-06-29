@@ -10,7 +10,18 @@ Difficulty: Medium
 Question: Create a custom error struct that implements the error interface.
 */
 
+type ErrorStruct struct {
+	Message string
+}
+
+func (e ErrorStruct) Error() string {
+	return e.Message
+}
+
 func main() {
-	// Write your solution here
-	fmt.Println("Not implemented")
+	errorData := ErrorStruct{
+		Message: "This is error message",
+	}
+
+	fmt.Println(errorData.Error())
 }

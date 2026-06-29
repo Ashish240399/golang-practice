@@ -10,7 +10,18 @@ Difficulty: Hard
 Question: Write functions that accept send-only and receive-only channels.
 */
 
+func sendOnlyChan(ch chan<- string) {
+	ch <- "Hello from sendOnly"
+}
+
+func receiveOnlyChan(ch <-chan string) {
+	message := <-ch
+
+	fmt.Println(message)
+}
+
 func main() {
-	// Write your solution here
-	fmt.Println("Not implemented")
+	ch := make(chan string)
+	go sendOnlyChan(ch)
+	receiveOnlyChan(ch)
 }
